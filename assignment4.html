@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Continuing Education Course and Instructor Evaluation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <a href="https://www.centennialcollege.ca" target="_blank">
+        <img
+          src="college.jpg.png"
+          alt="Centennial College Logo"
+          style="height: 200px"
+          class="logo-right"
+        />
+      </a>
+      <h1>Continuing Education Course and Instructor Evaluation</h1>
+    </header>
+
+    <!-- Evaluation Form -->
+    <form action="submit_form.php" method="POST">
+      <!-- Student and Course Information -->
+      <fieldset>
+        <legend>Student and Course Information</legend>
+
+        <label for="student-name">Student Name:</label>
+        <input
+          type="text"
+          id="student-name"
+          name="student-name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="email">Email Address:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="course-name">Course Name:</label>
+        <input
+          type="text"
+          id="course-name"
+          name="course-name"
+          placeholder="Enter course name"
+          required
+        />
+
+        <label for="course-code">Course Code:</label>
+        <input
+          type="text"
+          id="course-code"
+          name="course-code"
+          placeholder="Enter course code"
+          required
+        />
+
+        <label for="instructor-name">Instructor Name:</label>
+        <input
+          type="text"
+          id="instructor-name"
+          name="instructor-name"
+          placeholder="Enter instructor name"
+          required
+        />
+
+        <label for="semester">Semester:</label>
+        <input
+          type="text"
+          id="semester"
+          name="semester"
+          placeholder="e.g., Fall 2020"
+          required
+        />
+      </fieldset>
+
+      <!-- Course Evaluation Section -->
+      <fieldset>
+        <legend>Course Evaluation</legend>
+
+        <p>Please rate the following aspects of the course:</p>
+
+        <label for="content-quality">Course Content Quality:</label>
+        <select id="content-quality" name="content-quality" required>
+          <option value="">Select</option>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="average">Average</option>
+          <option value="poor">Poor</option>
+        </select>
+
+        <label for="materials-availability">Availability of Materials:</label>
+        <select
+          id="materials-availability"
+          name="materials-availability"
+          required
+        >
+          <option value="">Select</option>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="average">Average</option>
+          <option value="poor">Poor</option>
+        </select>
+
+        <label for="overall-satisfaction">Overall Course Satisfaction:</label>
+        <select id="overall-satisfaction" name="overall-satisfaction" required>
+          <option value="">Select</option>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="average">Average</option>
+          <option value="poor">Poor</option>
+        </select>
+      </fieldset>
+
+      <!-- Instructor Evaluation Section -->
+      <fieldset>
+        <legend>Instructor Evaluation</legend>
+
+        <p>Please rate the following aspects of the instructor:</p>
+
+        <label for="teaching-effectiveness">Teaching Effectiveness:</label>
+        <select
+          id="teaching-effectiveness"
+          name="teaching-effectiveness"
+          required
+        >
+          <option value="">Select</option>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="average">Average</option>
+          <option value="poor">Poor</option>
+        </select>
+
+        <label for="communication-skills">Communication Skills:</label>
+        <select id="communication-skills" name="communication-skills" required>
+          <option value="">Select</option>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="average">Average</option>
+          <option value="poor">Poor</option>
+        </select>
+
+        <label for="availability">Availability for Questions:</label>
+        <select id="availability" name="availability" required>
+          <option value="">Select</option>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="average">Average</option>
+          <option value="poor">Poor</option>
+        </select>
+
+        <label for="feedback-support">Feedback and Support:</label>
+        <select id="feedback-support" name="feedback-support" required>
+          <option value="">Select</option>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="average">Average</option>
+          <option value="poor">Poor</option>
+        </select>
+      </fieldset>
+
+      <!-- Suggestions and Additional Feedback -->
+      <fieldset>
+        <legend>Suggestions and Feedback</legend>
+
+        <label for="improvements">Suggestions for Improvement:</label>
+        <textarea
+          id="improvements"
+          name="improvements"
+          rows="5"
+          placeholder="Share your suggestions"
+        ></textarea>
+
+        <label for="additional-comments">Additional Comments:</label>
+        <textarea
+          id="additional-comments"
+          name="additional-comments"
+          rows="5"
+          placeholder="Share additional comments"
+        ></textarea>
+      </fieldset>
+
+      <!-- Form Submission -->
+      <fieldset>
+        <input type="submit" value="Submit Evaluation" />
+      </fieldset>
+    </form>
+  </body>
+</html>
